@@ -1,4 +1,4 @@
-import flask
+  import flask
 from flask import request, jsonify
 import speech_recognition as sr
 import json
@@ -51,19 +51,23 @@ Response={"answers":[]}
 answers=[]
 
 @app.route('/', methods=['GET'])
-
-
+op=["no"]
+an=["and"]
 @app.route('/api/all', methods=['POST'])
 def addOne():
     answers1=[]
     new = request.get_json()
     
     if new["question_key"]=="q1":
-        for j in content_list:
-            if j in new["options"]:
+        for j in new["options"]:
+            if j in content_list:
                 answers1.append(j)
-            else:
+	    elif j in op: 
                 answers1.append("NONE")
+	    elif j in an:
+		answers1.append("Others")
+	    else:
+		answers1.append([])
 
     if new["question_key"]=="q2":
        for j in content_list:
