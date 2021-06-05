@@ -60,7 +60,7 @@ def addOne():
 			req_ans=re.findall('[0-9]+',i)
 			for u in user_ans:
 				if(len(req_ans)==1):
-                                        for r in req_ans:
+					for r in req_ans:
 						if(u==r):
 							answers1.append(i)
 					a={"answers":answers1}
@@ -73,7 +73,16 @@ def addOne():
 						a={"answers":answers1}
 						Response.update(a)
 						return jsonify(Response)
-	
+	if new["question_key"]=="q3":
+        for j in new["options"]:
+            if j in content_list:
+                answers1.append(j)
+			else if j in content_list: 
+                answers1.append("NONE")
+			else if j in an:
+				answers1.append("Others")
+			else:
+				answers1.append([])
     a={"answers":answers1}
     Response.update(a)
     return jsonify(Response)
