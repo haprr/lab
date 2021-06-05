@@ -3,6 +3,7 @@ from flask import request, jsonify
 import speech_recognition as sr
 import json
 import sys
+import re
 
 
 app = flask.Flask(__name__)
@@ -30,31 +31,59 @@ Request= [
     }
     
 ]
+
 Response={"answers":[]}
 #print(content_list)
 answers=[]
 
 @app.route('/', methods=['GET'])
 
+
 @app.route('/api/all', methods=['POST'])
-#@app.route('/quarks', methods=['POST'])
 def addOne():
     answers1=[]
     new = request.get_json()
     
     if new["question_key"]=="q1":
-        for j in new["options"]:
-            if j in content_list:
+        for j in content_list:
+            if j in new["options"]:
                 answers1.append(j)
             else:
                 answers1.append("NONE")
+
+    if new["question_key"]=="q2":
+       for j in content_list:
+          user_ans=re.findall('[0-9]+',j)
+
+       for i in new["options"]:
+          req_ans=re.findall('[0-9]+',i)
+          for u in user_ans:
+             if(len(req_ans)==1):
+                for r in req_ans:
+                   if(u==r):
+                      answers1.append(i)
+                a={"answers":answers1}
+                Response.update(a)
+                return jsonify(Response)
+
+             elif(len(req_ans)==2):
+                if((u>=req_ans[0]) and (u<=req_ans[1])):
+                   answers1.append(i)
+                   a={"answers":answers1}
+                   Response.update(a)
+                   return jsonify(Response)
+
+    '''if new["question_key"]=="q3":
+       for j in content_list:
+          user_ans=re.findall('[A-Za-z]+',j)
+
+       for '''
+
     a={"answers":answers1}
     Response.update(a)
     return jsonify(Response)
-    """
-    Request.append(new)
-    return jsonify(Request)
-    """
+    
+    
 """
 @app.route('/api/v1/resources/books', methods=['GET'])
 def api_id():
@@ -62,7 +91,6 @@ def api_id():
         key = request.args['question_key'])
     else:
         return "Error: No id field provided. Please specify an id."
-
     # Create an empty list for our results
     answers = []
     for "options" in request.args:
@@ -75,6 +103,3 @@ def api_id():
 
 if __name__=="__main__":
 	app.run(use_reloader=False)
-	
-	
-
