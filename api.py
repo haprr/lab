@@ -73,16 +73,7 @@ def addOne():
 						a={"answers":answers1}
 						Response.update(a)
 						return jsonify(Response)
-	if new["question_key"]=="q3":
-        for j in new["options"]:
-            if j in content_list:
-                answers1.append(j)
-			else if j in content_list: 
-                answers1.append("NONE")
-			else if j in an:
-				answers1.append("Others")
-			else:
-				answers1.append([])
+	
     a={"answers":answers1}
     Response.update(a)
     return jsonify(Response)
