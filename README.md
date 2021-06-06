@@ -38,7 +38,8 @@ TEAM NAME:
 TESTING:
 
       We are using Postman tool to test our API.
-      http://localhost:5000/api/all
+      Method : POST
+      URL : http://localhost:5000/api/all 
 
 Request Body:
 
