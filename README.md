@@ -34,3 +34,22 @@ TEAM MEMBERS:
 TEAM NAME:
 
       GALAXY AI
+      
+TESTING:
+
+We are using Postman tool to test our API.
+http://localhost:5000/api/all
+
+Request Body:
+
+{
+    "question_key":"q1",
+    "options":["Diabetes","Thyroid","Cancer"],
+    "audio":"" //encoded utf-8 audio text
+}
+
+Audio text contains 
+
+Response:
+
+
