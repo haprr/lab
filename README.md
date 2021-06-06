@@ -9,6 +9,14 @@ A Virtual Hackathon
 ## Problem Domain
 
       Speech Analysis
+      
+## TEAM MEMBERS:
+
+      HARSHAPRIYA C R, SUPRITHA R
+
+## TEAM NAME:
+
+      GALAXY AI
 
 ## Solution to be demonstrated
 
@@ -35,14 +43,22 @@ A Virtual Hackathon
       Flask
       Python Speech Recognition module
       We are using SpeechRecognition library of Python which provides Speech-to-Text Transcription service, Flask is used to take in the Audio transcript and create both a GET       and POST request on the different route.
+      
+## Installation, Prerequisites
 
-## TEAM MEMBERS:
+       Postman tool - To send requests to api
+       
+       Flask - 
+       
+       install flask using "pip install flask" command
+       
+       Speech Reccognition Library -
+       
+       install using "pip install SpeechRecognition"
+       
+       PyAudio Library - install specific version (based on your installed Python version and system configuaration(AMD / intel with 32/64 bit) of PyAudio wheel file.
 
-      HARSHAPRIYA C R, SUPRITHA R
-
-## TEAM NAME:
-
-      GALAXY AI
+      
       
 ## TESTING:
 
@@ -67,12 +83,7 @@ A Virtual Hackathon
             {
                   "answer":["Diabetes"]
             }
-Prerequisites:
-  
-       Postman tool - To send requests to api
-       Flask - install flask using "pip install flask"
-       Speech Reccognition Library - install using "pip install SpeechRecognition"
-       PyAudio Library - install specific version (based on your installed Python version and system configuaration(AMD / intel with 32/64 bit) of PyAudio wheel file.
+
    
 Steps to execute:
       
