@@ -46,17 +46,17 @@ Request Body:
       {
           "question_key":"q1",
           "options":["Diabetes","Thyroid","Cancer"],
-          "audio":"" //encoded utf-8 audio text
+          "audio":"" //encoded utf-8 audio text("I have Diabetes")
       }
 
       Audio text will be converted to JSON and stored in microphone-results.txt file.
 
 Response:
 
-If user answers : I have Diabetis
+If user answers : I have Diabetes
 
       {
-            "answer":["Diabetis"]
+            "answer":["Diabetes"]
       }
 
 
