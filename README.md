@@ -9,6 +9,14 @@ A Virtual Hackathon
 ## Problem Domain
 
       Speech Analysis
+      
+## TEAM MEMBERS:
+
+      HARSHAPRIYA C R, SUPRITHA R
+
+## TEAM NAME:
+
+      GALAXY AI
 
 ## Solution to be demonstrated
 
@@ -30,19 +38,17 @@ A Virtual Hackathon
     3. What is your dob?
  
  
+
 ## Requirements
 
       Flask
       Python Speech Recognition module
       We are using SpeechRecognition library of Python which provides Speech-to-Text Transcription service, Flask is used to take in the Audio transcript and create both a GET       and POST request on the different route.
 
-## TEAM MEMBERS:
+## Installation
 
-      HARSHAPRIYA C R, SUPRITHA R
-
-## TEAM NAME:
-
-      GALAXY AI
+            Python Speech Recognition module:
+                  pip install speechrecognition
       
 ## TESTING:
 
