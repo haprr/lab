@@ -1,8 +1,33 @@
 # ode-to-code
 A Virtual Hackathon ODE-TO-CODE HACKATHON
 
-Selected PROBLEM STATEMENT 1
+Selected problem statement - 1
 
-TEAM MEMBERS ARE HARSHAPRIYA C R, SUPRITHA R
+Problem Domain: Speech Analysis
 
-TEAM NAME - GALAXY AI
+Solution to be demonstrated:
+
+      1. Creating a speech analysis module (Web Based) where certain questions such as
+  below could be asked by the system(text form), and the specific intent of the
+  answer should be displayed.
+
+Output Scenarios:
+
+    For UI - output can be presented in any way.
+    For API - Response 
+
+    The output request response is demonstrated using API.
+
+Question SET:
+
+    1. Do you suffer from any health diseases?
+    2. What’s your annual income?
+    3. What is your dob?
+
+TEAM MEMBERS:
+
+HARSHAPRIYA C R, SUPRITHA R
+
+TEAM NAME:
+
+GALAXY AI
