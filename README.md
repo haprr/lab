@@ -85,7 +85,7 @@ A Virtual Hackathon
             }
 
    
-Steps to execute:
+## Steps to execute:
       
        Make sure that both speech.py and api.py should be in the same folder.
        Execute only api.py using command "python api.py" in command prompt/or any Python executable environment by navigating to files directory.
