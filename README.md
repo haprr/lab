@@ -58,7 +58,12 @@ A Virtual Hackathon
        
        PyAudio Library - install specific version (based on your installed Python version and system configuaration(AMD / intel with 32/64 bit) of PyAudio wheel file.
 
+## Steps to execute:
       
+       Make sure that both speech.py and api.py files are in the same folder.
+       Execute only api.py using the following command 
+            
+            "python api.py" in command prompt/or any Python executable environment by navigating to files directory.      
       
 ## TESTING:
 
@@ -85,9 +90,6 @@ A Virtual Hackathon
             }
 
    
-## Steps to execute:
-      
-       Make sure that both speech.py and api.py should be in the same folder.
-       Execute only api.py using command "python api.py" in command prompt/or any Python executable environment by navigating to files directory.
+
             
 
