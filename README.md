@@ -69,7 +69,7 @@ A Virtual Hackathon
             }
 Prerequisites:
   
-       Postman tool - To send request to api
+       Postman tool - To send requests to api
        Flask - install flask using "pip install flask"
        Speech Reccognition Library - install using "pip install SpeechRecognition"
        PyAudio Library - install specific version (based on your installed Python version and system configuaration(AMD / intel with 32/64 bit) of PyAudio wheel file.
