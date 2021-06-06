@@ -37,19 +37,25 @@ TEAM NAME:
       
 TESTING:
 
-We are using Postman tool to test our API.
-http://localhost:5000/api/all
+      We are using Postman tool to test our API.
+      http://localhost:5000/api/all
 
 Request Body:
 
-{
-    "question_key":"q1",
-    "options":["Diabetes","Thyroid","Cancer"],
-    "audio":"" //encoded utf-8 audio text
-}
+      {
+          "question_key":"q1",
+          "options":["Diabetes","Thyroid","Cancer"],
+          "audio":"" //encoded utf-8 audio text
+      }
 
-Audio text contains 
+      Audio text will be converted to JSON and stored in microphone-results.txt file.
 
 Response:
+
+If user answers : I have Diabetis
+
+      {
+            "answer":["Diabetis"]
+      }
 
 
